@@ -12,7 +12,7 @@ export default function App() {
   });
   const getWeather = async () => {
     try {
-      const response = await fetch('http://localhost:3000/weathers');
+      const response = await fetch('https://weather-ape.herokuapp.com/weathers');
       const data = await response.json();
       setWeather(data)
     } catch (error) {
